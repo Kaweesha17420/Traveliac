@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*...................header..................*/
+.header
+{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../Images/Home\ 3.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links .stays{
+    color: #2157f8;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #2157f8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.fa-user-circle{
+    color: white;
+    margin-right: 10px;
+}
+.log{
+    display: inline-block;
+    align-items: right;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 50%;
+    
+}
+.log button{
+    border: 1px solid rgb(253, 253, 255);
+    padding: 4px 15px;
+    border-radius: 20px;
+    background-color: #fefefe;
+}
+.log .btnLogin-popup:hover{
+    background-color: #2157f8;
+    color: #fff;
+    border-color: #2157f8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.log .btn2:hover{
+    background-color: #2157f8;
+    color: #fff;
+    border-color: #2157f8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+
+/*.......footer.........*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer hr{
+    border: 1px solid gray;
+    opacity: 0.5;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 12px;
+}
+.icons .fa{
+    color: #4333f5;
+    margin: 0;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+/*..............property..........*/
+
+.property{
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tablep{
+    margin-left: 35px;
+
+}
+
+.table-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+tr .type-col{
+    row-gap: 20px;
+    flex-basis: 32%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    
+}
+tr .type-col img{
+    width: 300px;
+    height: 200px;
+    display:block ;
+    align-items: center;
+    border-radius: 10px; 
+    cursor: pointer;   
+}
+
+.layer h3{
+    width: auto;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    margin-left: 100px;
+}
+.layer {
+    
+    background: transparent;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(31, 107, 236, 0.7);
+}
+
+/*..........find stays by your travel destination.........*/
+
+.container{
+    max-width: 100rem;
+    margin: 50 40 ;
+    padding: 0 1rem;
+    padding-right: 80px;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.sec_space{
+    margin-top: 60px;
+    margin-left: 70px;
+    padding: 1rem 0;
+    text-align: center;
+}
+.swiper {
+    width: 50% 50%;
+    height: 50% 50%;
+    border-radius: 20px;  
+
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.swiper-slide img {
+    display: block;
+    width: 500px;
+    height: 400px;
+    object-fit: cover; 
+    display: flex;
+    margin-left: 10px;  
+    cursor: pointer;
+}
